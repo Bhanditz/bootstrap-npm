@@ -7,7 +7,9 @@
   "scripts": {
     "start": "npm run sass",
     "sass": "node-sass --output-style compressed bootstrap-custom.scss bootstrap-custom.css",
-    "watch": "npm run sass -- -w"
+    "watch": "npm run sass -- -w",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "mdo",
   "license": "MIT",
@@ -21,6 +23,8 @@
     "stylelint-config-recommended-scss": "^3.1.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^0.8.1",
-    "stylelint-scss": "^2.5.0"
-  }
+    "stylelint-scss": "^2.5.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
